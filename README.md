@@ -11,7 +11,6 @@ A simple Chrome extension that allows you to quickly archive any webpage using a
 ## Installation
 
 1. **Download the Repository**:
-   - Go to [https://github.com/YeruchamB/archiver-extension](https://github.com/YeruchamB/archiver-extension)
    - Click the green "Code" button
    - Select "Download ZIP"
    - Extract the ZIP file to your desired location
