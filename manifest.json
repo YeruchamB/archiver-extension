@@ -12,7 +12,7 @@
     "https://web.archive.org/*"
   ],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "wayback-archiver.html",
     "default_title": "Archive URL"
   },
   "icons": {

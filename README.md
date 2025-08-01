@@ -13,7 +13,6 @@ A simple Chrome extension that allows you to quickly archive any webpage using t
 ## Installation
 
 1. **Download the Repository**:
-   - Go to [https://github.com/YeruchamB/archiver-extension](https://github.com/YeruchamB/archiver-extension)
    - Click the green "Code" button
    - Select "Download ZIP"
    - Extract the ZIP file to your desired location
@@ -42,7 +41,7 @@ The extension:
 ## Files
 
 - `manifest.json` - Extension configuration
-- `popup.html` - Extension popup interface
+- `wayback-archiver.html` - Extension popup interface
 - `wayback-archiver.js` - Extension functionality (Wayback Machine integration)
 - `icon16.png`, `icon48.png`, `icon128.png` - Extension icons
 - `README.md` - This file
