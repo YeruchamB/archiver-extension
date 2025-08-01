@@ -10,28 +10,6 @@ A simple Chrome extension that allows you to quickly archive any webpage using a
 
 ## Installation
 
-### Option 1: Download from GitHub
-
-1. **Clone or Download the Repository**:
-   ```bash
-   git clone https://github.com/YeruchamB/archiver-extension.git
-   ```
-   Or download the ZIP file from GitHub and extract it.
-
-2. **Load Extension in Chrome**:
-   - Open Chrome and go to `chrome://extensions/`
-   - Enable "Developer mode" (toggle in the top right)
-   - Click "Load unpacked"
-   - Select the `archiver-extension` folder
-
-3. **Test the Extension**:
-   - Navigate to any webpage you want to archive
-   - Click the extension icon in your Chrome toolbar
-   - Click "Archive URL"
-   - A new tab will immediately open with archive.is and your URL pre-filled
-
-### Option 2: Manual Installation
-
 1. **Download the Repository**:
    - Go to [https://github.com/YeruchamB/archiver-extension](https://github.com/YeruchamB/archiver-extension)
    - Click the green "Code" button
@@ -64,7 +42,6 @@ The extension:
 - `popup.html` - Extension popup interface
 - `popup.js` - Extension functionality
 - `icon16.png`, `icon48.png`, `icon128.png` - Extension icons
-- `archive-icon-24.png` - Source icon file
 - `README.md` - This file
 
 ## Permissions
