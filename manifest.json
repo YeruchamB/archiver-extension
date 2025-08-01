@@ -1,11 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Archive.is URL Archiver",
+  "name": "Wayback Machine URL Archiver",
   "version": "1.0",
-  "description": "Quickly archive URLs using archive.is",
+  "description": "Quickly archive URLs using the Internet Archive's Wayback Machine",
   "permissions": [
     "activeTab",
     "tabs"
+  ],
+  "host_permissions": [
+    "https://archive.org/*",
+    "https://web.archive.org/*"
   ],
   "action": {
     "default_popup": "popup.html",

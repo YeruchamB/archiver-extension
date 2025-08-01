@@ -1,11 +1,13 @@
-# Archive.is URL Archiver Chrome Extension
+# Wayback Machine URL Archiver Chrome Extension
 
-A simple Chrome extension that allows you to quickly archive any webpage using archive.is.
+A simple Chrome extension that allows you to quickly archive any webpage using the Internet Archive's Wayback Machine.
 
 ## Features
 
 - One-click archiving of the current tab's URL
-- Automatically opens archive.is in a new tab with the current URL pre-filled
+- Automatically checks if the URL is already archived in the Wayback Machine
+- If archived, opens the archived version directly
+- If not archived, displays a message that no archived version was found
 - No approval prompts or delays - instant archiving
 
 ## Installation
@@ -26,21 +28,22 @@ A simple Chrome extension that allows you to quickly archive any webpage using a
    - Navigate to any webpage you want to archive
    - Click the extension icon in your Chrome toolbar
    - Click "Archive URL"
-   - A new tab will immediately open with archive.is and your URL pre-filled
+   - The extension will check the Wayback Machine and open the appropriate page
 
 ## How It Works
 
 The extension:
 1. Gets the URL of the currently active tab
-2. When you click "Archive URL", it immediately opens `https://archive.is/submit/?url=<YOUR_URL>` in a new tab
-3. Archive.is will then process and archive the webpage
-4. The popup closes automatically after opening the new tab
+2. When you click "Archive URL", it checks the Wayback Machine API at `https://archive.org/wayback/available?url=<YOUR_URL>`
+3. If the URL is already archived, it opens the archived version directly
+4. If the URL is not archived, it displays a message that no archived version was found
+5. The popup stays open to show the result
 
 ## Files
 
 - `manifest.json` - Extension configuration
 - `popup.html` - Extension popup interface
-- `popup.js` - Extension functionality
+- `wayback-archiver.js` - Extension functionality (Wayback Machine integration)
 - `icon16.png`, `icon48.png`, `icon128.png` - Extension icons
 - `README.md` - This file
 
@@ -49,6 +52,8 @@ The extension:
 The extension requires:
 - `activeTab` - To get the current tab's URL
 - `tabs` - To open new tabs
+- `https://archive.org/*` - To check Wayback Machine availability
+- `https://web.archive.org/*` - To access archived pages and save pages
 
 ## Troubleshooting
 
