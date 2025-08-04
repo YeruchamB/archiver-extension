@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Archive.is URL Archiver",
+  "name": "URL Archiver",
   "version": "1.0",
   "description": "Quickly archive URLs using archive.is",
   "permissions": [
