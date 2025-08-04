@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function archiveUrl(url) {
     // Create the archive.is URL
-    const archiveUrl = `https://archive.is/submit/?url=${encodeURIComponent(url)}`;
+    const archiveUrl = `https://archive.is/newest/${encodeURIComponent(url)}`;
     
     // Open the archive.is URL in a new tab immediately
     chrome.tabs.create({url: archiveUrl, active: true});
